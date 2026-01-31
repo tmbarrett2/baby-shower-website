@@ -1,86 +1,30 @@
 # Baby Barrett - Baby Shower Website
 
-An ocean-themed baby shower website inspired by Emily Winfield Martin's illustration style. Features deep sea greens, rich muted tones, and whimsical hand-drawn SVG illustrations.
+A minimal, typography-forward baby shower website.
 
-## Features
+## Setup
 
-- Illustrated SVG octopus and whale graphics (no emoji)
-- Deep, rich color palette inspired by vintage nautical illustrations
-- Responsive design
-- RSVP form (Formspree integration)
-- Registry links
-- Smooth scroll navigation
+1. Update event details in `index.html` (date, location)
+2. Update registry links with your actual registry URLs
+3. Push to GitHub and enable GitHub Pages in Settings > Pages
 
-## Quick Start
+## Files
 
-1. Open `index.html` in a browser to preview
-2. Customize content (see below)
-3. Deploy to GitHub Pages
+- `index.html` - Main page
+- `styles.css` - Styling
+- `script.js` - Form handling & navigation
+- `images/` - Background image
 
 ## Customization
 
-### Update Event Details
-
-In `index.html`, search for "To be announced" and replace with actual details when ready:
-
-```html
-<!-- Date -->
-<p class="hero-date-detail">Date to be announced</p>
-<p class="detail-main">Date & Time</p>
-<p class="detail-sub">To be announced</p>
-
-<!-- Location -->
-<p class="detail-main">Location</p>
-<p class="detail-sub">To be announced</p>
+**Colors** are defined at the top of `styles.css`:
+```css
+--color-bg: #1a2a3a;        /* Navy background */
+--color-accent: #c4b998;    /* Gold accent */
 ```
 
-### Enable Google Maps
+**Hero image** is set in `.hero-bg` in `styles.css`.
 
-1. Uncomment the map container (remove `style="display: none;"`)
-2. Add your Google Maps embed URL to the iframe `src`
+## Form
 
-### Set Up RSVP Form
-
-1. Create a form at [Formspree](https://formspree.io)
-2. Replace `YOUR_FORM_ID` in the form action:
-
-```html
-<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-```
-
-### Update Registry Links
-
-Replace placeholder URLs with your actual registry links.
-
-## Deployment
-
-### GitHub Pages
-
-1. Push files to GitHub repository
-2. Go to Settings > Pages
-3. Select main branch as source
-4. Site will be live at `https://username.github.io/repo-name/`
-
-## Color Palette
-
-| Color | Hex | Usage |
-|-------|-----|-------|
-| Deep | `#1a2e2e` | Background |
-| Deep Teal | `#234545` | Sections |
-| Teal | `#3d6b6b` | Accents |
-| Cream | `#f5f2eb` | Light sections, text |
-| Gold | `#c9a962` | Highlights, links |
-
-## File Structure
-
-```
-baby_shower_website/
-├── index.html    # Main page
-├── styles.css    # Styling
-├── script.js     # Interactivity
-└── README.md     # This file
-```
-
----
-
-Made with love for Baby Barrett
+RSVP submissions go to Formspree and are emailed to the account owner.
