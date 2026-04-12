@@ -48,16 +48,27 @@
             <div class="details-grid">
                 <div class="detail">
                     <span class="detail-label">When</span>
-                    <span class="detail-value">June 13, 2026</span>
+                    <span class="detail-value">June 13, 2026 at 10:30am</span>
                 </div>
                 <div class="detail">
                     <span class="detail-label">Where</span>
-                    <span class="detail-value">Somewhere in Colorado TBD</span>
+                    <span class="detail-value">Whitetail Park<br>Lafayette, CO</span>
                 </div>
                 <div class="detail">
                     <span class="detail-label">Attire</span>
                     <span class="detail-value">Come as you are</span>
                 </div>
+            </div>
+
+            <div class="map-wrap">
+                <iframe
+                    class="map-embed"
+                    src="https://maps.google.com/maps?q=2550+Autumn+Ridge+Blvd,+Lafayette,+CO+80026&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    allowfullscreen
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Whitetail Park location"></iframe>
+                <a href="https://maps.google.com/?q=2550+Autumn+Ridge+Blvd,+Lafayette,+CO+80026" target="_blank" rel="noopener" class="map-link">Get Directions</a>
             </div>
         </div>
     </section>
@@ -69,6 +80,7 @@
             <p class="section-intro">Let us know if you can make it.</p>
 
             <form class="form" id="rsvp-form" action="https://formspree.io/f/xqebvndn" method="POST">
+                <input type="hidden" name="_cc" value="chelseabeamer@gmail.com">
                 <div class="form-row">
                     <div class="form-group">
                         <label for="name">Name</label>
