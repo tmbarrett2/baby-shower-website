@@ -294,6 +294,7 @@ body {
 .map-wrap {
     margin-top: 3rem;
     text-align: center;
+    width: 100%;
 }
 
 .map-embed {
